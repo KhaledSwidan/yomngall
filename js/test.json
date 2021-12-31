@@ -1,0 +1,13 @@
+{
+    "name" : "khaled",
+    "age" : "28",
+    "country" : "egypt",
+    "skills":[
+        "html",
+        "css",{
+            "js":"one",
+            "jquery":"two",
+            "angular":"three"
+            }
+        ]
+}
