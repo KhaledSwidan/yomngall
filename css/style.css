@@ -804,6 +804,7 @@ header .wave path {
     position: absolute;
     width: 0;
     transition: var(--main-transition);
+    border-radius: 45% !important;
 }
 #serv .box:hover {
     transform: translateY(-10px);
@@ -891,3 +892,26 @@ header .wave path {
     background-color: var(--main-color);
 }
 /* end skll */
+/* start wrkstp */
+#wrkstp .skills .box{
+    background-color: #dedede;
+    border: 4px solid #fff;
+    transition: var(--main-transition);
+}
+#wrkstp .skills .box:hover{
+    border-color: rgb(175 141 201);
+    transform: translateY(-8%);
+    transition: var(--main-transition);
+}
+@media screen and (max-width: 767px) {
+    #wrkstp .skills{ margin-top: 30px; }
+    #wrkstp .skills .box{ padding: 1rem 1.5rem !important;}
+    #wrkstp .skills img{
+        width: 25% !important;
+        margin-bottom: 1rem;
+        margin-top: 0 !important;
+    }
+    #wrkstp .skills .box .text{text-align: center;}
+    #wrkstp .skills .box .text p{ margin-bottom: 0 !important;}
+}
+/* end wrkstp */
