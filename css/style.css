@@ -941,6 +941,7 @@ header .wave path {
 #evnt .info .tim .unt span:first-child { color: var(--main-color); }
 #evnt .info .tim .unt span:last-child { border-top: 1px solid #d4d4d4; }
 #evnt .subscr form{ border: 2px solid #1787e0; }
+#evnt .subscr form input[type="email"]{caret-color: rgb(255, 0, 0);}
 #evnt .subscr form input[type="email"]:focus { outline: none; }
 #evnt .subscr form input[type="email"]::placeholder { transition: opacity var(--main-transition); }
 #evnt .subscr form input[type="email"]:focus::placeholder { opacity: 0; }

@@ -196,15 +196,3 @@ btnSeeMoreCls.addEventListener("click", () =>
 {
   listSeeMore.style.display = "none";
 })
-
-
-
-
-
-function sleep() {
-  console.log("I'm sleepy!");
-  return "zzz";
-  return "snore";
-}
-
-sleep();
