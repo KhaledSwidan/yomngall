@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Crafty+Girls&display=swap');
 /* global css */
 :root{
     --main-color: #2196f3;
@@ -85,7 +86,10 @@ nav{
     background-color: rgba(0 0 0 / .1);
     box-shadow: 0 0 10px;
 }
-nav .logo{color: rgba(0,0,0,.7) !important;}
+nav .logo{
+    color: var(--main-color) !important;
+    font-family: 'Crafty Girls';
+}
 nav button {border: none !important;}
 nav button:focus {box-shadow: none !important;}
 nav button:hover{background-color: #8198b8 !important;}
