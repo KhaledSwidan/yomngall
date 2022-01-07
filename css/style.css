@@ -560,17 +560,25 @@ header .wave path {
 #testi .box{
     transition: var(--main-transition);
     box-shadow: var(--main-box-shadow);
+    border: 1px solid transparent;
 }
 #testi .box:hover{
     transition: var(--main-transition);
     transform: translateY(-10px);
+    border-width: 10px;
+    border-color: rgb(175 141 201);
+    box-shadow: none;
 }
 #testi .box img{
     top: -50px;
-    right: -10px;
+    right: -15px;
     width: 100px !important;
     height: 100px !important;
     border: 10px solid #f2f2f2;
+}
+#testi .box:hover img{
+    border-color: rgb(175 141 201);
+    transition: var(--main-transition);
 }
 #testi .box .rate .filled {color: #ffc107;}
 /* end testimonials */
@@ -915,3 +923,30 @@ header .wave path {
     #wrkstp .skills .box .text p{ margin-bottom: 0 !important;}
 }
 /* end wrkstp */
+/* start evnt */
+#evnt .info .tim .unt{
+    border:2px solid var(--main-color-alt);
+    transition: var(--main-transition);
+}
+#evnt .info .tim .unt:hover,
+#evnt .info .tim .unt:hover span:last-child{
+    border-color: #004a86;
+    transition: var(--main-transition);
+}
+#evnt .info .tim .unt span { transition: var(--main-transition); }
+#evnt .info .tim .unt span:first-child { color: var(--main-color); }
+#evnt .info .tim .unt span:last-child { border-top: 1px solid #d4d4d4; }
+#evnt .subscr form{ border: 2px solid #1787e0; }
+#evnt .subscr form input[type="email"]:focus { outline: none; }
+#evnt .subscr form input[type="email"]::placeholder { transition: opacity var(--main-transition); }
+#evnt .subscr form input[type="email"]:focus::placeholder { opacity: 0; }
+#evnt .subscr form input[type="submit"] {
+    background-color: #1787e0;
+    transition: var(--main-transition);
+}
+#evnt .subscr form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #1787e0 !important;
+    transition: var(--main-transition);
+}
+/* end evnt */
