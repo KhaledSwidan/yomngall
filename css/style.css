@@ -6,12 +6,10 @@
     --main-transition: .7s;
     --main-box-shadow: 2px 2px 2px 1px #927f98;
 }
+body{background-color: #f2f2f2 !important;}
 ul{list-style: none !important;}
 a{text-decoration: none !important;}
-html{scroll-behavior: smooth;}
-body{background-color: #f2f2f2 !important;}
-.spikes {position: relative;}
-.spikes::after {
+.spk::after {
     content: "";
     position: absolute;
     right: 0;
@@ -21,10 +19,9 @@ body{background-color: #f2f2f2 !important;}
     background-image: linear-gradient(90deg, white 25%, rgba(185 100 250 / 90%) 25%);
     background-size: 7rem;
 }
-/*start sections header*/
+/*start sections title style*/
 .mainTitle{
     width: fit-content;
-    padding: 10px;
     z-index: 1;
     transition: var(--main-transition);
 }
@@ -80,7 +77,7 @@ body{background-color: #f2f2f2 !important;}
         height: 100%;
     }
 }
-/*end sections header*/
+/*start sections title style*/
 /* start nav section */
 nav{
     background-color: rgba(0 0 0 / .1);
@@ -130,13 +127,11 @@ nav .mnue .mnueUl li:hover a {color: #1877f2 !important;}
     border-bottom: 3px solid var(--main-color-alt);
     border-left: 3px solid var(--main-color-alt);
     width: 80%;
-    top: 5%;
     transition: top var(--main-transition), opacity var(--main-transition);
 }
 .seelinks li {
     margin-bottom: 20px;
     font-size: 1.1rem;
-    position: relative;
 }
 .seelinks li a{
     border-bottom: 1px solid #dac9d7;
@@ -181,9 +176,8 @@ nav .mnue .mnueUl li:hover a {color: #1877f2 !important;}
 /* end seemore */
 /* start head section */
 header {height: 100vh !important;}
-header .headCont img{
-    animation: headImg 5s linear infinite;
-}
+header .headCont{transform: translateY(50%);}
+header .headCont img{animation: headImg 5s linear infinite;}
 @keyframes headImg{
     0%{top: 0; transform: rotatey(0deg);}
     50%{top: -80px; transform: rotatey(180deg);}
@@ -217,10 +211,6 @@ header .down-arr .left{transform: rotate(-151deg);}
     70%{transform: translateY(-30px);}
     90%{transform: translateY(-20px);}
 }
-header .wave {transform: translateY(-60%); z-index: -1;}
-header .wave path {
-    fill: #ffffff;
-}
 .gthb:hover{
     transform: scale(1.5);
     transition: .3s ease;
@@ -238,12 +228,8 @@ header .wave path {
     transform: scale(1.5);
     transition: .3s ease;
 }
-.upwrk:hover{
-    transform: scale(1.5);
-    transition: .3s ease;
-}
 @media screen and (max-width: 767px) {
-    .headCont {flex-direction: column;}
+    .headCont {flex-direction: column-reverse;}
     .headInfo {padding-bottom: 1.5rem !important;}
 }
 /* end head section */
@@ -257,26 +243,18 @@ header .wave path {
     width: 20px;
     height: 20px;
     border: 3px solid #cc00ffe0;
-    margin: 10px auto;
-    border-radius: 5px;
     cursor: pointer;
-    position: relative;
 }
 .nav-bullets .bullet .toolTip{
     background-color: #cc00ff;
     width: 115px;
     color: #fff;
-    padding: 4px 10px;
-    position: absolute;
     right: 30px;
     top: -6px;
-    border-radius: 3px;
-    display: none;
     cursor: default;
     pointer-events: none;
-    text-align: center;
 }
-.nav-bullets .bullet:hover .toolTip{display: block;}
+.nav-bullets .bullet:hover .toolTip{display: block !important;}
 .nav-bullets .bullet .toolTip::before{
     content: '';
     position: absolute;
@@ -590,16 +568,15 @@ header .wave path {
 /* start gallery */
 #gallery::before{
     content: "";
-    background-image: url(../img/800px-VanGogh-starry_night_ballance1\ \(1\)\ \(1\).jpg);
+    background-image: url(../img/800px-VanGogh-starry_night_ballance1\ \(1\)\ \(1\)-compressed.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: absolute;
     width: 100%;
-    height: 112%;
-    transform: rotate(
-15deg) translate(-6%, 0%);
+    height: 104%;
+    transform: rotate(4deg) translate(-6%, 0%);
     border-radius: 10px;
     opacity: 65%;
     z-index: -1;
@@ -789,6 +766,10 @@ header .wave path {
         padding: 5px;
         border-radius: 5px;
     }
+    #stud .box:hover .info{
+        background-color: #8a60ff;
+        transition: var(--main-transition);
+    }
 }
 /* end students */
 /* start services */
@@ -909,6 +890,22 @@ header .wave path {
 }
 /* end skll */
 /* start wrkstp */
+#wrkstp{
+    background-image: url(../img/musicNart.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#wrkstp:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0 0 0 /30%);
+}
 #wrkstp .skills .box{
     background-color: #dedede;
     border: 4px solid #fff;
