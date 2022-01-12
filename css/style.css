@@ -180,6 +180,7 @@ nav .mnue .mnueUl li:hover a {color: #1877f2 !important;}
 }
 /* end seemore */
 /* start head section */
+header {height: 100vh !important;}
 header .headCont img{
     animation: headImg 5s linear infinite;
 }
@@ -589,16 +590,19 @@ header .wave path {
 /* start gallery */
 #gallery::before{
     content: "";
-    background-image: url(../img/starry_night_full.jpg);
+    background-image: url(../img/800px-VanGogh-starry_night_ballance1\ \(1\)\ \(1\).jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: absolute;
     width: 100%;
-    height: 80%;
-    transform: rotate(15deg) translate(-6%, 25%);
+    height: 112%;
+    transform: rotate(
+15deg) translate(-6%, 0%);
     border-radius: 10px;
+    opacity: 65%;
+    z-index: -1;
 }
 @media screen and (max-width: 768px) {
     #gallery::before{display: none;}
@@ -863,10 +867,10 @@ header .wave path {
 #serv .box .info:hover{cursor: pointer;}
 #serv .box .info:hover a{font-weight: 600;}
 #serv .box:hover .info svg.svg-inline--fa{
-    animation: boxINfoArr 0.8s linear infinite;
+    animation: boxINfoArrServ 0.8s linear infinite;
     transition: var(--main-transition);
 }
-@keyframes boxINfoArr { 100%{transform: translateX(1px);} }
+@keyframes boxINfoArrServ { 100%{transform: translateX(1px);} }
 /* end services */
 /* start skll */
 #skll .subtxt::before{ /*back-letter capital-gray*/

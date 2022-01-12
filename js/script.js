@@ -196,3 +196,33 @@ btnSeeMoreCls.addEventListener("click", () =>
 {
   listSeeMore.style.display = "none";
 })
+
+
+
+
+
+
+
+function navBar()
+{
+  sections.forEach(section =>
+  {
+    var node = document.createElement("li");
+    node.innerHTML = `<li><a class= "menu__link" href= '#${section.id}'>${section.dataset.nav}</a></li>`;
+    menu.appendChild(node);
+  })
+}
+navBar();
+
+window.onscroll = function ()
+{
+  document.querySelectorAll("section").forEach(function (active)
+  {
+    if (active.getBoundingClientRect().top >= -400 && active.getBoundingClientRect().top <= 150) {
+      active.classList.add("your-active-class");
+    } else {
+      active.classList.remove("your-active-class");
+    }
+  })
+}
+
