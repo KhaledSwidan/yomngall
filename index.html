@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/brands.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="img/logo-fancy (1).svg">
         <title>الفنان زنجيري أفندى</title>
@@ -14,139 +14,110 @@
 
     <body>
 
-        <!-- <div class="loadTxt">0%</div>
-        <div class="pg"> -->
-        <!-- start nav section -->
-        <nav id="home" class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 pb-0" style="z-index: 4;">
+        <nav class="navbar navbar-light bg-transparent position-fixed top-0 w-100 py-1 ">
             <div class="container">
-                <a class="logo navbar-brand fw-bolder fs-6 w-25 d-inline-block py-0" href="index.html">
-                    All About Art
-                    <img src="img/logo-fancy.svg" alt="" style="width: 3rem !important;">
-                </a>
-                <button class="navbar-toggler d-block" type="button" aria-expanded="true" data-bs-toggle="offcanvas"
+                <div style="width: 15rem;">
+                    <a class="logo navbar-brand fw-bolder fs-6 w-25 d-inline-block py-0" href="index.html">
+                        All About Art
+                        <img src="img/logo-fancy.svg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa-solid fa-bars"></i>
                 </button>
-                <div class="mnue offcanvas offcanvas-top text-center" id="offcanvasTop" tabindex="-1"
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop"
                     aria-labelledby="offcanvasTopLabel">
-                    <ul
-                        class="mnueUl navbar-nav flex-column d-flex justify-content-end w-100 rounded offcanvas-body px-0">
-                        <li class="nav-item rounded px-3">
-                            <a class="nav-link active fs-5" aria-current="page" href="index.html">
-                                Home
+                    <div class="offcanvas-body p-0 d-flex flex-column justify-content-between">
+                        <ul class="mnueUl pt-0 pb-1 navbar-nav d-flex align-items-center rounded px-0"
+                            style="background-color: rgb(163 210 247 / 50%);">
+                            <li class="nav-item rounded px-2 position-relative">
+                                <a class="nav-link active " aria-current="page" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item rounded px-2 position-relative">
+                                <a class="nav-link " href="articles.html">
+                                    Articles
+                                </a>
+                            </li>
+                            <li class="nav-item rounded px-2 position-relative">
+                                <a class="nav-link " href="team.html">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="nav-item rounded px-2 position-relative">
+                                <a class="nav-link " href="contct.html">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item rounded px-2 position-relative">
+                                <a class="nav-link " href="testi.html">
+                                    Testimonial
+                                </a>
+                            </li>
+                            <li class="nav-item rounded px-2 position-relative">
+                                <a class="nav-link " href="gallery.html">
+                                    Gallery
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="contact px-3 py-5">
+                            <h5 class="text-center">Visual Artist &#128105;&#8205;&#127912;</h5>
+                            <p class="text-muted">
+                                Stay tuned for all my new painting updates on my own artworks account.
+                            </p>
+                            <div class="d-flex flex-column justify-content-around align-items-center">
+                                <a href="mailto: yomyeltantawy25@gmail.com" class="btn btn-primary rounded-pill">Send
+                                    Me</a>
+                                <ul
+                                    class="mb-0 mt-2 d-flex list-unstyled gap-2 justify-content-center align-items-center">
+                                    <li>
+                                        <a href="https://www.instagram.com/yomna_eltantawy_artworks/" target="_blank"
+                                            class="d-block text-light">
+                                            <i class="fa-brands fa-instagram fa-lg instagram rounded p-1"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/monn139" target="_blank"
+                                            class="d-block text-light">
+                                            <i class="fa-brands fa-facebook fa-lg facebook rounded p-1"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/" target="_blank" class="d-block text-light">
+                                            <i class="fa-brands fa-youtube fa-lg youtube rounded p-1"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="px-1 py-2" style="background-color: rgb(163 210 247 / 50%);">
+                            <a class="logo navbar-brand fw-bolder fs-6 w-25 d-inline-block py-0" href="index.html">
+                                All About Art
+                                <img src="img/logo-fancy.svg" alt="" class="img-fluid">
                             </a>
-                        </li>
-                        <li class="nav-item rounded px-4">
-                            <a class="nav-link fs-5" href="articles.html">
-                                Articles
-                            </a>
-                        </li>
-                        <li class="nav-item rounded px-4">
-                            <a class="nav-link fs-5" href="team.html">
-                                About Us
-                            </a>
-                        </li>
-                        <li class="nav-item rounded px-4">
-                            <a class="nav-link fs-5" href="testi.html">
-                                Testimonial
-                            </a>
-                        </li>
-                        <li class="nav-item rounded px-4">
-                            <a class="nav-link fs-5" href="gallery.html">
-                                Gallery
-                            </a>
-                        </li>
-                        <li class="nav-item rounded px-4">
-                            <a class="nav-link fs-5" href="contct.html">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="nav-item rounded px-4">
-                            <a class="nav-link fs-5" id="seemore" href="#seemore">
-                                See More
-                            </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
-        <!-- end nav section -->
-
-        <!-- start seemore -->
-        <div class="seemore m-5 ms-2 align-items-center justify-content-around rounded position-fixed top-0">
-            <div class="img p-3 pe-0 w-50">
-                <img src="img/art_museum_-8-or4.svg" alt="" class="w-100">
-            </div>
-            <div class="uls align-items-center justify-content-around d-flex w-100">
-                <ul class="seelinks p-0 ms-4 mb-0 mt-3 w-100">
-                    <li class="position-relative">
-                        <a href="evnt.html"><i class="far fa-comments fa-fw"></i>Events</a>
-                    </li>
-                    <li class="position-relative">
-                        <a href="features.html"><i class="far fa-user fa-fw"></i>Features</a>
-                    </li>
-                    <li class="position-relative">
-                        <a href="serv.html"><i class="far fa-building fa-fw"></i>Services</a>
-                    </li>
-                    <li class="position-relative">
-                        <a href="skll.html"><i class="far fa-check-circle fa-fw"></i>Our Skills</a>
-                    </li>
-                    <li class="position-relative">
-                        <a href="wrkstp.html"><i class="far fa-clipboard fa-fw"></i>How It Works</a>
-                    </li>
-                </ul>
-                <ul class="seelinks p-0 mb-0 mt-3 me-0 w-100">
-                    <li class="position-relative">
-                        <a href="stud.html"><i class="far fa-calendar-alt fa-fw"></i>Students</a>
-                    </li>
-                    <li class="position-relative">
-                        <a href="pric.html"><i class="fas fa-server fa-fw"></i>Pricing Plans</a>
-                    </li>
-                    <li class="position-relative">
-                        <a href="vid.html"><i class="far fa-play-circle fa-fw"></i>Top Videos</a>
-                    </li>
-                    <li class="position-relative">
-                        <a href=""><i class="far fa-chart-bar fa-fw"></i> Stats</a>
-                    </li>
-                    <li class="position-relative">
-                        <a href=""><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
-                    </li>
-                </ul>
-            </div>
-            <button class="btn-close position-absolute p-2"></button>
-        </div>
-        <!-- end seemore -->
 
         <!-- start head section -->
-        <header class="header text-center mb-5 pb-3 d-flex flex-column">
-            <div id="particles-js" class="position-absolute top-0 bottom-0 start-0 end-0"></div>
+        <header class="header text-center pb-3 d-flex flex-column">
             <div class="container mt-5" style="z-index: 3;">
                 <div class="d-flex headCont align-items-center justify-content-center">
-                    <div class="headInfo text-center d-flex flex-column justify-content-start">
+                    <div class="headInfo text-center d-flex flex-column p-3 rounded">
                         <h1>Welcome <br>
-                            We are <span class="text-info fw-bolder">Bohemian</span> Artists
+                            We are <span class="text-primary fw-bolder">Bohemian</span> Artists
                         </h1>
                         <p class="txt-rotate text-muted fs-3" data-period="2000"
-                            data-rotate='[ "HTML 5", "CSS 3", "JavaScript"]'>
+                            data-rotate='[ "Visual Art", "Graphic", "Decoration"]'>
                         </p>
-                        <address class="icons d-flex justify-content-center align-items-center mt-4">
-                            <a href="https://github.com/KhaledSwidan" class="gthb me-3">
-                                <i class="fab fa-github fs-3"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/khaled-swidan-62a499b1/" class="fcbk">
-                                <i class="fab fa-linkedin fs-3" style="color: #0a66c2 !important;">
-                                </i>
-                            </a>
-                            <a href="https://codepen.io/KS500Q" class="mx-3 cdpn">
-                                <i class="fab fa-codepen fs-3 text-muted">
+                        <p class="fs-5" style="color: #300d42!important">
+                            Your Unique Reference &#127912;&#128105;&#8205;&#127912;
 
-                                </i>
-                            </a>
-                            <a href="mailto:khaledqutb4@gmail.com" class="mil">
-                                <i class="fas fa-paper-plane fs-3" style="color: #3390ec !important;">
-                                </i>
-                            </a>
-                        </address>
+                        </p>
                     </div>
                     <img src="img/undraw_monster_artist_2crm.svg" alt=""
                         class="w-50 img-fluid text-end position-relative">
@@ -162,30 +133,8 @@
         </header>
         <!-- end head section -->
 
-        <!-- start nav bullets -->
-        <div class="nav-bullets position-fixed top-50 end-0">
-            <div class="bullet position-relative my-2 mx-auto rounded" data-section=".articles">
-                <div class="toolTip py-1 px-2 position-absolute rounded d-none text-center">Articles</div>
-            </div>
-            <div class="bullet position-relative my-2 mx-auto rounded" data-section=".team">
-                <div class="toolTip py-1 px-2 position-absolute rounded d-none text-center">About Us</div>
-            </div>
-            <div class="bullet position-relative my-2 mx-auto rounded" data-section=".testi">
-                <div class="toolTip py-1 px-2 position-absolute rounded d-none text-center">Testimonial</div>
-            </div>
-            <div class="bullet position-relative my-2 mx-auto rounded" data-section=".gallery">
-                <div class="toolTip py-1 px-2 position-absolute rounded d-none text-center">Gallery</div>
-            </div>
-            <div class="bullet position-relative my-2 mx-auto rounded" data-section=".contact">
-                <div class="toolTip py-1 px-2 position-absolute rounded d-none text-center">Contact</div>
-            </div>
-        </div>
-        <!-- end nav bullets -->
-
-        <script src="particles.js-master/particles.js"></script>
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/all.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 
