@@ -232,8 +232,8 @@ header .down-arr .left{transform: rotate(-151deg);}
     90%{transform: translateY(-20px);}
 }
 @media screen and (max-width: 767px) {
-    .headCont {flex-direction: column-reverse;}
-    .headInfo {padding-bottom: 1.5rem !important;}
+    header .headCont {flex-direction: column-reverse;}
+    header .headInfo {margin-top:5rem !important; padding-bottom: 1.5rem !important;}
 }
 /* end head section */
 /* start nav bullets */
