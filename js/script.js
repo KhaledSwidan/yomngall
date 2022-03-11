@@ -1,3 +1,4 @@
+"use strict";
 // start header typing
 let TxtRotate = function (el, toRotate, period)
 {
@@ -70,16 +71,3 @@ function scrollToSomeWhere(element)
     });
 }
 scrollToSomeWhere(allBullets);
-
-// seemore list;
-let btnSeeMoreOpn = document.querySelector("#seemore");
-let btnSeeMoreCls = document.querySelector(".seemore button");
-let listSeeMore = document.querySelector(".seemore");
-btnSeeMoreOpn.addEventListener("click", () =>
-{
-  listSeeMore.style.display = "flex";
-})
-btnSeeMoreCls.addEventListener("click", () =>
-{
-  listSeeMore.style.display = "none";
-})

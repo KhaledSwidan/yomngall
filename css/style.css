@@ -198,6 +198,12 @@ header .headInfo{
     background-color: rgba(255, 255, 255, 0.418);
     box-shadow: 0 0 8px;
 }
+header .headCont .btnGlsRsn{
+    background-color: rgb(24 119 242 / 60%);
+    border-color: #0a3162;
+    width: 15rem !important;
+}
+header .headCont .btnGlsRsn:hover{background-color: rgb(24 119 242);}
 @keyframes headImg{
     0%{top: 0; transform: rotatey(0deg);}
     50%{top: -80px; transform: rotatey(180deg);}
