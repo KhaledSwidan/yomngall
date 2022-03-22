@@ -1,0 +1,44 @@
+@use "./variables";
+@use "./global";
+
+#articles{
+    background-color: #dabaf7;
+    .top-head{
+        .subtxt{
+            &::before{ /*back-letter capital-gray*/
+                content: "A";
+                text-transform: uppercase;
+                position: absolute;
+                color: rgb(0 0 0 / 25%);
+                font-size: 6rem;
+                top: 117px;
+                left: 50%;
+                z-index: 0;
+                transform: translate(-50%,-50%);
+                font-weight: bold;
+            }
+        }
+    }
+    .box{
+        box-shadow: variables.$boxShadow;
+        overflow: hidden;
+        transition: variables.$mainTransition;
+        background-color: #000;
+        &:hover{
+            transform: translateY(-3%);
+            box-shadow: 2px 2px 2px 1px #6e6870;
+            transition: variables.$mainTransition;
+            .info{
+                svg.svg-inline--fa{animation: boxINfoArr 0.8s linear infinite;}
+                @keyframes boxINfoArr { 100%{transform: translateX(20px);} }
+            }
+        }
+        .content{border-bottom: 3px solid #dabaf7;}
+        .info{
+            cursor: pointer;
+            &:hover{
+                a{font-weight: 600;}
+            }
+        }
+    }
+}

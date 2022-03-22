@@ -1,0 +1,118 @@
+@use "./variables";
+body{background-color: #f2f2f2 !important;}
+ul{list-style: none !important;}
+a{text-decoration: none !important;}
+.spk{
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 1rem;
+        z-index: 1;
+        background-image: linear-gradient(90deg, white 25%, rgba(185 100 250 / 90%) 25%);
+        background-size: 7rem;
+    }
+}
+
+/*start sections title style*/
+.mainTitle{
+    width: fit-content;
+    z-index: 1;
+    transition: variables.$mainTransition;
+    &:hover{
+        color:#f8c6ff;
+        transition-delay: 0.5s;
+        transition: variables.$mainTransition;
+    }
+    &::before,
+    &::after{
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: #4d54a8;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &::before{left: -30px;}
+    &::after{right: -30px;}
+    &:hover::before{
+        z-index: -1;
+        animation: left 0.5s linear forwards;
+    }
+    &:hover:after{
+        z-index: -1;
+        animation: right 0.5s linear forwards;
+    }
+    @keyframes left {
+        50%{
+            left: 0;
+            width: 15px;
+            height: 15px;
+        }
+        100%{
+            left: 0;
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @keyframes right {
+        50%{
+            right: 0;
+            width: 15px;
+            height: 15px;
+        }
+        100%{
+            right: 0;
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+/*end sections title style*/
+.loadTxt{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    font-weight: 600;
+    z-index: 100;
+}
+/* start nav bullets */
+.nav-bullets{
+    transform: translateY(-50%);
+    width: 40px;
+    z-index: 3;
+    .bullet{
+        width: 20px;
+        height: 20px;
+        border: 3px solid #cc00ffe0;
+        cursor: pointer;
+        .toolTip{
+            background-color: #cc00ff;
+            width: 115px;
+            color: #fff;
+            right: 30px;
+            top: -6px;
+            cursor: default;
+            pointer-events: none;
+            &::before{
+                content: '';
+                position: absolute;
+                border: 10px solid;
+                border-color: transparent transparent transparent #cc00ff;
+                right: -21px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &:hover{
+            .toolTip{display: block !important;}
+        }
+    }
+}
+/* end nav bullets */
